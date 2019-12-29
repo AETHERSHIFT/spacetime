@@ -1,7 +1,8 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
+    browser: true
   },
   'extends': [
     'plugin:vue/essential',
@@ -12,6 +13,7 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   },
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
+    sourceType: "module"
   }
 }

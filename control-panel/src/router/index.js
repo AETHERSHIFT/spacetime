@@ -1,14 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+// import Home from '../views/Home.vue'
+import GraphExplorerComponent from '@/components/graph-explorer/Explorer'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: Home
+    name: 'Home',
+    component: GraphExplorerComponent
+  },
+  {
+    path: '/graph',
+    name: 'Graph Explorer',
+    component: GraphExplorerComponent
   },
   {
     path: '/about',
